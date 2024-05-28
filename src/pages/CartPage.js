@@ -25,7 +25,7 @@ const CartPage = () => {
               <i className="fa fa-shopping-cart"></i> Checkout
             </button>
             <Link to={`/`} className="btn btn-secondary w-100">
-              <i className="fa fa-arrow-left"></i> Continue Shopping
+              <i className="fa fa-arrow-left"></i> Continue Shopping!
             </Link>
           </div>
         </div>
