@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { CartContext } from "../context/CartContextProvider";
 import { Link } from "react-router-dom";
-import '../styles/CartItem.css';
+import "../styles/CartItem.css";
 
 export const CartItem = ({ product }) => {
   const { cart, dispatch } = useContext(CartContext);
@@ -31,9 +31,7 @@ export const CartItem = ({ product }) => {
           >
             <b>-</b>
           </button>
-          <button className="rounded">
-            {product.quantity}
-          </button>
+          <button className="rounded">{product.quantity}</button>
           <button
             className="btn btn-outline-dark"
             onClick={() => Increase(product.id)}
@@ -45,7 +43,7 @@ export const CartItem = ({ product }) => {
           Remove
         </button>
         <Link to={`/`} className="btn-continue">
-        <i className="fa fa-arrow-left"></i> {''}
+          <i className="fa fa-arrow-left"></i> {""}
           Continue Shopping
         </Link>
       </div>

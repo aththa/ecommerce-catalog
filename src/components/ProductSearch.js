@@ -1,6 +1,5 @@
-import React from 'react';
-import '../styles/SearchBox.css';
-
+import React from "react";
+import "../styles/SearchBox.css";
 
 const SearchBar = ({ onSearch }) => {
   const handleSearch = (e) => {
@@ -8,11 +7,10 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <input 
-      className='search-box'
+    <input
+      className="search-box"
       placeholder="Search Products"
-      onChange={handleSearch} 
-      
+      onChange={handleSearch}
     />
   );
 };
